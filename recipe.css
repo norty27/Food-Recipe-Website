@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#nav {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(111, 63, 4);
+    border-bottom: 2px solid rgb(59, 33, 1);
+    color: rgb(247, 212, 169);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    font-size: 21px;
+}
+
+input {
+    height: 33px;
+    font-size: 17px;
+}
+
+.left {
+    height: 100px;
+    width: 30%;
+}
+
+.right {
+    height: 100px;
+    width: 70%;
+}
+
+#searchedMeal {
+    width: 230px;
+}
+
+#showData {
+    background-color: rgb(245, 176, 92);
+    text-align: center;
+    /* padding-top: 30px; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: rgb(111, 63, 4);
+    font-weight: 800;
+}
+
+.card {
+    height: 360px;
+    padding: 15px;
+    width: 300px;
+    background-color: rgb(247, 212, 169);
+    border-radius: 5px;
+    box-shadow: 4px 4px 15px rgb(111, 63, 4);
+}
+
+.img {
+    margin-top: 16px;
+    height: 200px;
+    width: 200px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgb(111, 63, 4);
+}
+
+.viewMore {
+    margin-top: 10px;
+    height: 40px;
+    width: 100px;
+    background-color: rgb(111, 63, 4);
+    color: rgb(246, 218, 184);
+    border: 2px solid rgb(59, 33, 1);
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px rgb(111, 63, 4);
+}
+
+.modal {
+    position: absolute;
+    top: 0px;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    display: none;
+    position: fixed;
+    overflow-y: scroll;
+    padding-bottom: 40px;
+}
+
+.crossbtn {
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    height: 39px;
+    width: 36px;
+    background-color: red;
+    border: 2px solid black;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 30px;
+
+}
+
+.crossbtn:hover {
+    cursor: pointer;
+}
+
+.block {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgb(195, 190, 190);
+    border-top: 5px solid rgb(247, 156, 44);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+#signup {
+    height: 35px;
+    width: 100px;
+    font-size: 18px;
+}
+
+#form {
+    z-index: 3;
+    margin: auto;
+    position: fixed;
+    top: 30px;
+    left: 100px;
+    border: 2px solid black;
+    height: 70%;
+    width: 80%;
+    background-color: rgb(246, 218, 184);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    display: none;
+}
+
+#form input {
+    height: 40px;
+    width: 300px;
+    font-size: 19px;
+    padding-left: 3px;
+}
+
+#fSubmit {
+    height: 35px;
+    width: 150px;
+    font-size: 21px;
+}
+
+#form #fCross {
+    height: 30px;
+    width: 40px;
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.buyPara {
+    font-size: 29px;
+    color: rebeccapurple;
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.addToCartBtn {
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+    margin-left: 550px;
+    margin-bottom: 10px;
+    background-color: rgb(245, 176, 92);
+}
+
+.video {
+    height: 75%;
+    width: 100%;
+}
+
+.procedure {
+    text-align: justify;
+    padding: 10px;
+    font-size: 18px;
+}
