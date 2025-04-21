@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App</title>
+        <link rel="stylesheet" href="recipe2.css">
+    <style>
+        .cart {
+            display: none;
+            height: 200px;
+            width: 400px;
+            background-color: red;
+            
+        }
+    </style>
+</head>
+<body>
+    
+        <!-- navbar -->
+        <nav id="nav">
+            <div class="left">
+                <h1>Recipe App</h1>
+            </div>
+            <div class="right">
+                <form onsubmit="searchMeal(event)">
+                    <input type="text" placeholder="enter your dish" id="searchedMeal">
+                    <input type="submit" id="sub">
+                    <button type="button" id="signup" onclick="showForm()">Sign up</button>
+                </form>
+            </div>
+        </nav>
+    
+        <div class="block">
+            <div class="loader"></div>
+        </div>
+    
+        <div class="cart"></div>
+    
+        <!-- form -->
+        <form id="form" onsubmit="userData(event)">
+            <h1>Enter your details</h1>
+            <input type="text" placeholder="enter your name" id="username">
+            <input type="password" name="" id="pass" placeholder="enter password">
+            <button type="submit" id="fSubmit">submit</button>
+            <button id="fCross" onclick="fCrossBtn()">X</button>
+        </form>
+    
+    
+        <!-- showing the data -->
+        <div class="modal">
+            <!-- <h1>Buy Now :</h1> -->
+        </div>
+        <div id="showData"></div>
+        <script src="./recipe2.js"></script>
+    
+        <!-- let images = [
+        l1,l2,l3,l4 
+        ]
+    
+        div img src  -->
+    
+    
+    
+    
+</body>
+</html>
