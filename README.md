@@ -1,2 +1,2 @@
-# My-Projects
- These are my projects in web designing/ web development.
+# My-Project
+ This is my project in web designing/ web development.
